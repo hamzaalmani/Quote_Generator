@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cecece;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #002c5f;
+  color: white;
+  position: relative;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.welcome {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .welcome {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+}
+
+
+/* Navbar */
+
+.navbar {
+  background-color: #2f608d;
+  padding: 12px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: #1a3f66;
+}
+
+.active-link {
+  background-color: #163a5c;
+  border-radius: 4px;
+}
+
+
+/* Home */
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 80px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #002c5f;
+}
+
+/* Responsive Home */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 20px;
+  }
+}
+
+/* Quote card */
+.quote-card {
+  background-color: white;
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.quote-card p:first-child {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.quote-card p:last-child {
+  font-style: italic;
+  color: #444;
+}
+
+/* Quote Card Responsiveness */
+@media (max-width: 768px) {
+  .quote-card {
+    padding: 25px;
+  }
+
+  .quote-card p:first-child {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-card {
+    padding: 20px;
+  }
+
+  .quote-card p:first-child {
+    font-size: 16px;
+  }
+}
+
+
+/* Buttons */
+
+.quote-actions {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+
+/* New Quote Button */
+.new-quote-button {
+  padding: 10px 20px;
+  background-color: #1f4e79;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.new-quote-button:hover {
+  background-color: #7c85a0;
+}
+
+/* Copy Button */
+.copy-button {
+  padding: 10px 20px;
+  background-color: #1f4e79;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.copy-button:hover {
+  background-color: #7c85a0;
+}
+
+/* Star Button */
+.star-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.star-button:hover {
+  transform: scale(1.1);
+}
+
+/* Favorites Page */
+.favorites-page {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.page-title {
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.empty-state {
+  margin-top: 50px;
+  font-size: 18px;
+  color: #666;
+}
+
+
+/* toast */
+.toast {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #b14b4b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  z-index: 1000;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, 10px); }
+  10% { opacity: 1; transform: translate(-50%, 0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, 10px); }
+}
+
+/* App Layout */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #002c5f;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
