@@ -2,16 +2,6 @@
 
 ### Overview
 
-** The LSA Quote Generator is a React-based application that displays random quotes and allows users to save and manage their favorite quotes. The application consists of two primary pages: Home, which displays a randomly selected quote, and Favorites, which displays all quotes marked as favorites by the user.
-
-The UI design is inspired by the structure and layout of the IGA website, featuring a header, navigation bar, main content area, and footer, with responsive styling implemented using CSS.
-
-A local dataset was implemented to keep the application simple, stable, and focused on demonstrating core React concepts such as component structure, state management, and client-side routing. **
-
-1.	UI Design## Quote Generator
-
-### Overview
-
 The LSA Quote Generator is a React-based application that displays random quotes and allows users to save and manage their favorite quotes. The application consists of two primary pages: **Home**, which displays a randomly selected quote, and **Favorites**, which displays all quotes marked as favorites by the user.
 
 The UI design is inspired by the structure and layout of the IGA website, featuring a header, navigation bar, main content area, and footer, with responsive styling implemented using CSS.
@@ -75,7 +65,6 @@ Quotes can be copied by clicking the "Copy" button, which utilizes the browserâ€
 Make sure Node.js is installed on your system. You can confirm this by running:
 
 node -v
-
 
 If it is not installed, download and install it from:  
 https://nodejs.org/en
