@@ -1,6 +1,6 @@
-##Quote Generator
+## Quote Generator
 
-###Overview
+### Overview
 
 ** The LSA Quote Generator is a React-based application that displays random quotes and allows users to save and manage their favorite quotes. The application consists of two primary pages: Home, which displays a randomly selected quote, and Favorites, which displays all quotes marked as favorites by the user.
 
@@ -74,37 +74,26 @@ Quotes can be copied by clicking the "Copy" button, which utilizes the browser�
 
 Make sure Node.js is installed on your system. You can confirm this by running:
 
-The layout was designed to replicate the visual feel of the IGA website, incorporating a header with a state of Indiana logo and welcome message, a navigation bar, a main content area, and a sticky footer. Application has responsive feature.
+node -v
 
-2.	Static Data as Quote Source
-Quotes are stored locally in quotes.js. Each quote contains an id, text and author. Random quotes are selected programmatically from this static dataset.
 
-3.	Component Reusability
-Reusable components were implemented to promote clean architecture and avoid duplication. The Header, Navbar, and QuoteCard components are designed to be reusable across the application, ensuring consistent layout and UI behavior while maintaining separation of concerns.
+If it is not installed, download and install it from:  
+https://nodejs.org/en
 
-4.	Favorites State Management & Persistence
-The Favorites page updates instantly when a quote is favorited or unfavorited, without requiring a page refresh, demonstrating real-time UI updates through React state management. Favorite quotes are also persisted using localstorage, ensuring they remain saved even after the browser is reloaded. 
+---
 
-5.	Dynamic Routing & URL Updates
-Client-side routing is implemented using react-router-dom. The URL updates dynamically based on the active route, and the active navigation link is visually highlighted to reflect the current page (e.g. /favorites when on favorites page). The browser tab title also updates dynamically.
+### Installation Steps
 
-6.	Random Quote Functionality
-A random quote is displayed on initial page load and whenever the "New Quote" button is clicked. Quotes are selected programmatically from a static dataset using React state.
+1. Clone the repository:
 
-7.	Favorite Toggle Logic
-Quotes can be marked as favorites by clicking the star icon. When selected, the star turns yellow and the quote is added to the Favorites page. Clicking the star again removes the quote from favorites and resets the star to its default state.
+git clone https://github.com/hamzaalmani/Quote_Generator.git
 
-8.	Copy to Clipboard
-Quotes can be copied by clicking the "Copy" button, which utilizes the browser’s Clipboard API. A toast notification appears to confirm that the quote has been successfully copied.
+2.	Install dependencies: 
 
-How to run the project
+npm install
 
-Prerequisite: Make sure Node.js is installed in your system. You can confirm it by running ‘node -v’ in your terminal. If it is not installed, you can install it from https://nodejs.org/en.
+3.	Run the development server: 
 
-1.	Clone repository: Go to terminal in VS code and type - ‘git clone https://github.com/hamzaalmani/Quote_Generator.git’
-
-2.	Install dependencies: ‘npm install’ run and this will install all the dependencies
-
-3.	Run the development server: ‘npm run dev’
+npm run dev
 
 4.	Press command and click on link shown in the terminal (e.g. http:localhost:5173)
